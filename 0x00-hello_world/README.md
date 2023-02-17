@@ -29,4 +29,4 @@ _.0-preprocessor: is a script that runs a C file through the preprocessor and sa
 		Example: if the C file is main.c, the output file should be main.s
 
 
-101-quote.c is a  C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error. the program should rerturn 1 and printf and puts are not allowed
+101-quote.c is a  C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error. the program should rerturn 1 and printf and puts are not allowed _
