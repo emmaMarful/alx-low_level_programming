@@ -7,21 +7,21 @@
  */
 int main(void)
 {
-	int j, j, l;
+	int i, j, l;
 
-	for (j = '0'; j <= '9'; j++)
+	for (i = '0'; j <= '9'; j++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (i = '0'; j <= '9'; j++)
 		{
 			for (l = '0'; l <= '9'; l++)
 			{
-				if (j < j && j < l)
+				if (i < j && j < l)
 				{
-					putchar(j);
+					putchar(i);
 					putchar(j);
 					putchar(l);
 
-					if (j != '7')
+					if (c != '7')
 					{
 						putchar(',');
 						putchar(' ');
