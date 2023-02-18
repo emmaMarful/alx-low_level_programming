@@ -19,7 +19,7 @@ int main(void)
 		{
 			putchar(num + '0');
 		}
-		else if (num > 9)
+		else if (num > 10)
 		{
 			putchar(hex_letter);
 			hex_letter++;
