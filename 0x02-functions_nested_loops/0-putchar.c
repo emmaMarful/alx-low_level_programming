@@ -15,7 +15,7 @@ int main(void)
 	{
 		char store = p[i];
 
-		_putchar(store);
+		putchar(store);
 	}
 	_putchar('\n');
 	return (0);
