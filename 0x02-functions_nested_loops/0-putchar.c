@@ -9,10 +9,10 @@ int main(void)
 	char p [8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	char i;
 
-	for (i = 0; i < sizeof(p); i++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(p[i]);
+		putchar(p[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
