@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * main - starting point
  * Description: prints _putchar
@@ -13,7 +15,7 @@ int main(void)
 	{
 		char c = str[i];
 
-		putchar(c);
+		_putchar(c);
 		i++;
 	}
 
