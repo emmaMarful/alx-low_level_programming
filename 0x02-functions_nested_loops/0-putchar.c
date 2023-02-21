@@ -6,13 +6,17 @@
 
 int main(void)
 {
-	int p [8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char p [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	int i;
+	int sizep;
 
-	for (i = 0; i < 8; i++)
+	sizep = sizeof(p);
+	for (i = 0; i < sizep; i++)
 	{
-		_putchar(p[i]);
+		char store = p[i];
+
+		putchar(store);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
