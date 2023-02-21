@@ -15,8 +15,8 @@ int main(void)
 	{
 		char store = p[i];
 
-		putchar(store);
+		_putchar(store);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
