@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	char p [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	char p [8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 	char i;
 
 	for (i = 0; i < sizeof(p); i++)
