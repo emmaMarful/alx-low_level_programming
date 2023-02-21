@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * main - starting point of a code
  * Description: a program that print's _putchar
