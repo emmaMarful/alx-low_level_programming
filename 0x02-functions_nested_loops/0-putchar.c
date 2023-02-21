@@ -1,21 +1,22 @@
 /**
- * main - starting point
- * Description: prints _putchar
+ * main - starting point of a code
+ * Description: a program that print's _putchar
  * Return: 0
  */
 
 int main(void)
 {
-	char str[] = "_putchar\n";
-	int i = 0;
+	char p [] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+	int i;
+	int sizep;
 
-	while (str[i] != '\0')
+	sizep = sizeof(p);
+	for (i = 0; i < sizep; i++)
 	{
-		char c = str[i];
+		char store = p[i];
 
-		putchar(c);
-		i++;
+		_putchar(store);
 	}
-
+	_putchar('\n');
 	return (0);
 }
