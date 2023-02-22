@@ -4,10 +4,10 @@
  * jack_bauer - function
  * @void: argument
  * Description: prints every minutes of the day
- * Return: 0
+ * Return: void
  */
 
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
