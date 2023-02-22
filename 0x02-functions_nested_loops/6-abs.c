@@ -15,9 +15,11 @@ int _abs(int n)
 	if (n < 0)
 	{
 		absa = absa * n;
+		return (absa);
 	}
 	else
 	{
 		return (n);
 	}
+	return (0);
 }
