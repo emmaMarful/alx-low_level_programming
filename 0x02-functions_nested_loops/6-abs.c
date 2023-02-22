@@ -9,7 +9,16 @@
 
 int _abs(int n)
 {
-	int prt;
+	int absa;
 
-	prt = abs(n);
+	absa = -1;
+	if (n < 0)
+	{
+		absa = absa * n;
+	}
+	else
+	{
+		return (n);
+	}
+	return (0);
 }
