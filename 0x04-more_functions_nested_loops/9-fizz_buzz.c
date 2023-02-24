@@ -1,27 +1,27 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * main - starting point of the program
- * Description: fizz buzz test
- * Return: 0
+ * main - fizz buzz test
+ * Description:  fizzBuzz
+ * Return: 0;
  */
 
 int main(void)
 {
-	int num;
+	int i;
 
-	num = 1;
+	i = 1;
 	while (i <= 100)
 	{
-		if (num % 3 == 0 && num % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		}
-		else if (num % 3 == 0)
+		else if (i % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (num % 5 == 0)
+		else if (i % 5 == 0)
 		{
 			printf("Buzz");
 		}
@@ -29,12 +29,12 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		if (num != 100)
+		if (i != 100)
 		{
 			putchar(' ');
 		}
 
-		num++;
+		i++;
 	}
 	putchar('\n');
 	return (0);
