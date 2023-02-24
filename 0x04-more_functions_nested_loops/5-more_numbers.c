@@ -12,8 +12,7 @@ void more_numbers(void)
 	numX10 = 0;
 	while (numX10 < 10)
 	{
-		number = 0;
-		while (number <= 14)
+		for (number = 0; number <= 14; number++)
 		{
 			store_num = number;
 			if (number > 9)
@@ -22,7 +21,6 @@ void more_numbers(void)
 				store_num = number % 10;
 			}
 			_putchar(store_num + '0');
-			number++;
 		}
 		_putchar('\n');
 		numX10++;
