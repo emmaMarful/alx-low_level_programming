@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * print_most_numbers - a function to print some certain numbers
+ * print_numbers - a function that prints single digit numbers
  * Return: void
  */
 
-void print_most_numbers(void)
+void print_numbers(void)
 {
 	int number;
 
 	number = 0;
 	while (number <= 9)
 	{
-		if (number != 2 && number != 4)
-		{
-			_putchar(number + '0');
-		}
+		_putchar(number + '0');
 		number++;
 	}
 	_putchar('\n');

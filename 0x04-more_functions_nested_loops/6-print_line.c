@@ -13,11 +13,8 @@ void print_line(int n)
 	start_point = 0;
 	while (start_point < n)
 	{
-		if (n > 0)
-		{
-			_putchar('_');
-		}
-		start_point++;
+		_putchar('_');
+		start_p++;
 	}
 	_putchar('n');
 }
