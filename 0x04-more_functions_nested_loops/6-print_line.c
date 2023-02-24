@@ -19,5 +19,5 @@ void print_line(int n)
 		}
 		start_point++;
 	}
-	_putchar('n');
+	_putchar('\n');
 }
