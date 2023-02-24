@@ -21,7 +21,7 @@ void more_numbers(void)
 				_putchar('1');
 				store_num = number % 10;
 			}
-			_putchar('0' + store_num);
+			_putchar(store_num + '0');
 			number++;
 		}
 		_putchar('\n');
