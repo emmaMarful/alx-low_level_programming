@@ -15,19 +15,19 @@ int main(void)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			printf("FizzBuzz \n");
+			printf("FizzBuzz ");
 		}
 		else if (num % 3 == 0)
 		{
-			printf("Fizz \n");
+			printf("Fizz ");
 		}
 		else if (num % 5 == 0)
 		{
-			printf("Buzz \n");
+			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d \n", num);
+			printf("%d ", num);
 		}
 		num++;
 	}
