@@ -11,7 +11,7 @@ void print_line(int n)
 	int start_point;
 
 	start_point = 0;
-	while (start_point < n)
+	while (n > 0 && start_point < n)
 	{
 		_putchar('_');
 		start_p++;
