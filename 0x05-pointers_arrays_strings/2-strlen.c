@@ -4,15 +4,17 @@
  * _strlen - is a function with a char type as argument
  * @s: is a variable
  * Description: a function that returns the length of a string
- * Return: strlen(s)
+ * Return: lenOfStr
  */
 
 int _strlen(char *s)
 {
-	int a;
+	int lenOfStr;
 
-	for (a = 0; a <= s[a]; a++)
+	lenOfStr = 0;
+	while (s[lenOfStr])
 	{
+		lenOfStr++;
 	}
-	return (a);
+	return (lenOfStr);
 }
