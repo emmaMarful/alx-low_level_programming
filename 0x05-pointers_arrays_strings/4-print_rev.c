@@ -9,15 +9,13 @@
 
 void print_rev(char *s)
 {
-	int lenOfStr;
+	int lenOfStr, rev;
 
 	lenOfStr = 0;
 	while (s[lenOfStr])
 	{
 		lenOfStr++;
 	}
-
-	int rev;
 
 	rev = 0;
 	while (lenOfStr >= rev)
