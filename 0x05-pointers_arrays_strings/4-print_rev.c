@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int lenOfStr;
 
 	lenOfStr = 0;
-	while (str[lenOfStr])
+	while (s[lenOfStr])
 	{
 		lenOfStr++;
 	}
@@ -22,7 +22,7 @@ void print_rev(char *s)
 	rev = 0;
 	while (lenOfStr >= rev)
 	{
-		_putchar(str[lenOfStr]);
+		_putchar(s[lenOfStr]);
 		lenOfStr--;
 	}
 	_putchar('\n');
