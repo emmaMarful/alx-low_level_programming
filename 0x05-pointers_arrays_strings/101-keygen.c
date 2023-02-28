@@ -11,19 +11,16 @@
 
 int main(void)
 {
-	srand((unsigned int)(time(NULL)));
-	int i;
-	char pass[12], uppCase, lowerCase;
+	int sum;
+	char pass;
 
-	for (i = 0; i < 4; i++)
+	srand(time(NULL));
+	while (sum <= 2645)
 	{
-		pass[i] = rand() % 9;
-		uppCase = 'A' + (rand() % 26);
-		pass[i + 2] = uppCase;
-		lowerCase = 'a' + (rand() % 26);
-		pass[i + 3] = lowerCase;
-		printf("%d%c%c", pass[i], pass[1 + 2], pass[i + 2], pass[i + 3]);
+		pass = rand() % 128;
+		sum += pass;
+		putchar(pass);
 	}
-	printf("\n\n");
+	putchar(2772 - sum);
 	return (0);
 }
