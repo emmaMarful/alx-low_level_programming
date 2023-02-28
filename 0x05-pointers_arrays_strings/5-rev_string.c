@@ -9,7 +9,7 @@
 
 void rev_string(char *s)
 {
-	int lenOfStr;
+	int lenOfStr, i;
 	char temp;
 
 	lenOfStr = 0;
@@ -17,7 +17,7 @@ void rev_string(char *s)
 	{
 		lenOfStr++;
 	}
-	for (int i = 0; i < lenOfStr; i++)
+	for (i = 0; i < lenOfStr; i++)
 	{
 		lenOfStr--;
 		temp = s[i];
