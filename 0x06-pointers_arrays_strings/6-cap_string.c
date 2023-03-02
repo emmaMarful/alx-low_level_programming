@@ -4,39 +4,40 @@
  * cap_string - a fubction
  * @firstUp: an argument
  * Description: a function that capitalizes all words of a string
- * Return: firstUp
+ * Return: fw (firstWord)
  */
 
-char *cap_string(char *firstUp)
+char *cap_string(char *fw)
 {
 	int i = 0;
 
-	for (i = 0; firstUp[i] != '\0'; i++)
+	for (i = 0; fw[i] != '\0'; i++)
 	{
 		if (i == 0)
 		{
-			if (firstUp[i] >= 'a' && firstUp[i] <= 'z')
-				firstUp[i] -= 32;
+			if (fw[i] >= 'a' && fw[i] <= 'z')
+				fw[i] -= 32;
 			continue;
 		}
-		if (firstUp[index] == ' ' ||
-		    firstUP[index] == ';' ||
-		    firstUp[index] == '.' ||
-		    firstUp[index] == '!' ||
-		    firstUp[index] == '?' ||
-		    firstUp[index] == '"' ||
-		    firstUp[index] == '(' ||
-		    firstUp[index] == ')' ||
-		    firstUp[index] == '{' ||
-		    firstUp[index] == '}' ||
-		    firstUp[index] == '\n' ||
-		    firstUp[index] == '\t' ||
+		if (str[i] == ' ' ||
+		    str[i] == '\t' ||
+		    str[i] == '\n' ||
+		    str[i] == ',' ||
+		    str[i] == ';' ||
+		    str[i] == '.' ||
+		    str[i] == '!' ||
+		    str[i] == '?' ||
+		    str[i] == '"' ||
+		    str[i] == '(' ||
+		    str[i] == ')' ||
+		    str[i] == '{' ||
+		    str[i] == '}' ||
 		   )
 		{
 			i++;
-			if (firstUP[i] >= 'a' && firstUp[i] <= 'z')
+			if (fw[i] >= 'a' && fw[i] <= 'z')
 			{
-				firstUp[i] -= 32;
+				fw[i] -= 32;
 				continue;
 			}
 			else
@@ -46,5 +47,5 @@ char *cap_string(char *firstUp)
 			}
 		}
 	}
-	return (firstUP);
+	return (fw);
 }
