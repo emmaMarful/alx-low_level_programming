@@ -19,5 +19,6 @@ char *string_toupper(char *toUp)
 			toUp[i] -= 32;
 		}
 	}
+	toUp[i] = '\0';
 	return (toUp);
 }
