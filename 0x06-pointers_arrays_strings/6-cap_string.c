@@ -19,19 +19,18 @@ char *cap_string(char *firstUp)
 				firstUp[i] -= 32;
 			continue;
 		}
-		if (firstUp[i] == ' '
-				|| firstUp[i] == ','
-				|| firstUp[i] == ';'
-				|| firstUp[i] == '.'
-				|| firstUp[i] == '!'
-				|| firstUp[i] == '?'
-				|| firstUp[i] == '"'
-				|| firstUp[i] == '('
-				|| firstUp[i] == ')'
-				|| firstUp[i] == '{'
-				|| firstUp[i] == '}'
-				|| firstUp[i] == '\n'
-				|| firstUp[i] == '\t'
+		if (firstUp[index] == ' ' ||
+		    firstUP[index] == ';' ||
+		    firstUp[index] == '.' ||
+		    firstUp[index] == '!' ||
+		    firstUp[index] == '?' ||
+		    firstUp[index] == '"' ||
+		    firstUp[index] == '(' ||
+		    firstUp[index] == ')' ||
+		    firstUp[index] == '{' ||
+		    firstUp[index] == '}' ||
+		    firstUp[index] == '\n' ||
+		    firstUp[index] == '\t' ||
 		   )
 		{
 			i++;
