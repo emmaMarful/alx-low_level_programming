@@ -11,41 +11,29 @@ char *cap_string(char *fw)
 {
 	int i = 0;
 
-	for (i = 0; fw[i] != '\0'; i++)
+	while (fw[i])
 	{
-		if (i == 0)
-		{
-			if (fw[i] >= 'a' && fw[i] <= 'z')
-				fw[i] -= 32;
-			continue;
-		}
-		if (fw[i] == ' ' ||
-		    fw[i] == '\t' ||
-		    fw[i] == '\n' ||
-		    fw[i] == ',' ||
-		    fw[i] == ';' ||
-		    fw[i] == '.' ||
-		    fw[i] == '!' ||
-		    fw[i] == '?' ||
-		    fw[i] == '"' ||
-		    fw[i] == '(' ||
-		    fw[i] == ')' ||
-		    fw[i] == '{' ||
-		    fw[i] == '}' ||
-		   )
-		{
-			i++;
-			if (fw[i] >= 'a' && fw[i] <= 'z')
-			{
-				fw[i] -= 32;
-				continue;
-			}
-			else
-			{
-				i--;
-				continue;
-			}
-		}
+		while (!(fw[i] >= 'a' && fw[i] <= 'z'))
+			index++;
+
+		if (fw[i - 1] == ' ' ||
+		    fw[i - 1] == '\t' ||
+		    fw[i - 1] == '\n' ||
+		    fw[i - 1] == ',' ||
+		    fw[i - 1] == ';' ||
+		    fw[i - 1] == '.' ||
+		    fw[i - 1] == '!' ||
+		    fw[i - 1] == '?' ||
+		    fw[i - 1] == '"' ||
+		    fw[i - 1] == '(' ||
+		    fw[i - 1] == ')' ||
+		    fw[i - 1] == '{' ||
+		    fw[i - 1] == '}' ||
+		    i == 0)
+			str[i] -= 32;
+
+		i++;
 	}
+
 	return (fw);
 }
