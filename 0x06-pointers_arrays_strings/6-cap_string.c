@@ -19,19 +19,19 @@ char *cap_string(char *fw)
 				fw[i] -= 32;
 			continue;
 		}
-		if (str[i] == ' ' ||
-		    str[i] == '\t' ||
-		    str[i] == '\n' ||
-		    str[i] == ',' ||
-		    str[i] == ';' ||
-		    str[i] == '.' ||
-		    str[i] == '!' ||
-		    str[i] == '?' ||
-		    str[i] == '"' ||
-		    str[i] == '(' ||
-		    str[i] == ')' ||
-		    str[i] == '{' ||
-		    str[i] == '}' ||
+		if (fw[i] == ' ' ||
+		    fw[i] == '\t' ||
+		    fw[i] == '\n' ||
+		    fw[i] == ',' ||
+		    fw[i] == ';' ||
+		    fw[i] == '.' ||
+		    fw[i] == '!' ||
+		    fw[i] == '?' ||
+		    fw[i] == '"' ||
+		    fw[i] == '(' ||
+		    fw[i] == ')' ||
+		    fw[i] == '{' ||
+		    fw[i] == '}' ||
 		   )
 		{
 			i++;
