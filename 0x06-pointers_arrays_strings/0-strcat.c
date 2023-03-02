@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _stract - is a function
+ * *_strcat - is a function
  * @dest: ia an argument
  * @src: is an argument
  * Description: a function that concatenates two strings
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
 	lenOfDest = 0;
 	while (lenOfDest <= dest[len1])
 		lenOdDest++;
-	for (indexOfArr = 0; src[indexOfArr] != '\0'; indexOfArr++)
-		dest[lenOfDest ++] = src[indexOfArr];
+	for (indexOfArr = 0; src[indexOfArr]; indexOfArr++)
+		dest[lenOfDest++] = src[indexOfArr];
 	return (dest);
 }
