@@ -14,12 +14,8 @@ char *_strcat(char *dest, char *src)
 
 	lenOfDest = 0;
 	while (lenOfDest <= dest[len1])
-	{
 		lenOdDest++;
-	}
 	for (indexOfArr = 0; src[indexOfArr] != '\0'; indexOfArr++)
-	{
-		dest[lenOfDest + indexOfArr] = src[indexOfArr];
-	}
+		dest[lenOfDest ++] = src[indexOfArr];
 	return (dest);
 }
