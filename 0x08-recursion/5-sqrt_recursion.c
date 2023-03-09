@@ -1,6 +1,6 @@
 #include "main.h"
 
-int actual_sqrt_recursion(int n, int m);
+int is_sqrt_recursion(int n, int m);
 
 /**
  *_sqrt_recursion - the natural square root of a number
@@ -15,13 +15,13 @@ int _sqrt_recursion(int n)
 	return (actual_sqrt_recursion(n, 0));
 }
 /**
- * actual_sqrt_recursion - the natural square
+ * is_sqrt_recursion - the natural square
  * @n: square root num
  * @r: iterator
  * Return: the square root
  */
 
-int actual_sqrt_recursion(int n, int r)
+int is_sqrt_recursion(int n, int r)
 {
 	if (r * r > n)
 		return (-1);
