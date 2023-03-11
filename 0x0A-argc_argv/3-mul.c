@@ -4,9 +4,9 @@
 
 /**
  * main - a program should print the result of the multiplication
- * @argc: number
- * @argv: name of array
- * Return: 1 if there's only one argument, 0 otherwise
+ * @argc: number (argument)
+ * @argv: array (argument)
+ * Return: return 1 if there's only one argument, 0 otherwise
  */
 
 int main(int argc, char *argv[])
@@ -20,9 +20,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		for (i = 1; i < argc; i++)
-			sum += atoi(argv[i]);
-		printf("%d", sum);
+		answer = (atoi(argv[1])) * (atoi(argv[2]));
+		printf("%d\n", sum);
 	}
 	return (0);
 }
