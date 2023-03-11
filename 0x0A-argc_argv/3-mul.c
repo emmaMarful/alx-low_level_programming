@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int sum;
 
 	if (argc != 3)
 	{
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		answer = (atoi(argv[1])) * (atoi(argv[2]));
+		sum = (atoi(argv[1])) * (atoi(argv[2]));
 		printf("%d\n", sum);
 	}
 	return (0);
