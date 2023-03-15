@@ -11,11 +11,8 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *merge;
-	int i, merge_len, lengt_h;
+	int i = 0, merge_len = 0, lengt_h = 0;
 
-	i = 0;
-	merge_len = 0;
-	lengt_h = 0;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
