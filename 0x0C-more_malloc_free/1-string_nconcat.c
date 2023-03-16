@@ -6,14 +6,14 @@
  * @s1: destination string
  * @s2: source, string to be concatenated
  * @n: size of byte in s2
- * Return: return "" if s1 and s2 is equal to null or return
+ * Return: return if s1 and s2 is equal to null or return
  * null if dest is equal to null or return the pointer dest
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *dest;
-	unsigned int i, dest_len = 0, s1Len = n;
+	unsigned int i, dest_len = 0, s1Len;
 
 	if (s1 == NULL)
 		s1 = "";
