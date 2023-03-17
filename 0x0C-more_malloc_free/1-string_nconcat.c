@@ -3,16 +3,16 @@
 
 /**
  * *string_nconcat - this is a function that adds two strings
- * @s1: destination
- * @s2: string to be concatenated
- * @n: length of string 2
- * Return: dest
+ * @s1: destination string
+ * @s2: string to be added
+ * @n: length of s2
+ * Return: null if string1 is equal to null
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *dest;
-	unsigned int len = n, i, dlen = 0;
+	char *string1;
+	unsigned int len = n, i, sLen = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,18 +23,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i]; i++)
 		len++;
 
-	dest = malloc(sizeof(char) * (len + 1));
+	string1 = malloc(sizeof(char) * (len + 1));
 
-	if (dest == NULL)
+	if (string1 == NULL)
 		return (NULL);
 
 	for (i = 0; s1[i]; i++)
-		dest[dlen++] = s1[i];
+		string1[sLen++] = s1[i];
 
 	for (i = 0; s2[i] && i < n; i++)
-		dest[dlen++] = s2[i];
+		string1[sLen++] = s2[i];
 
-	destt[dlen] = '\0';
+	string1[sLen] = '\0';
 
-	return (dest);
+	return (string1);
 }
