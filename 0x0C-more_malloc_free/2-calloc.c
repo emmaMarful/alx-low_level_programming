@@ -26,10 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	emp = ptr;
 
-	while (i < (size * nmemb))
-	{
+	for (i = 0; i < (nmemb * size); i++)
 		emp[i] = '\0';
-		i++;
-	}
 	return (ptr);
 }
