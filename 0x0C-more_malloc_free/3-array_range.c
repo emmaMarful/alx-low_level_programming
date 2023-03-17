@@ -3,9 +3,9 @@
 
 /**
  * array_range - a function that creates an array of integer
- * @min: first array index.
- * @max: last array index.
- * Return: null if array fails or min > max. else arr
+ * @min: starting point of the array.
+ * @max: end of the array.
+ * Return: the pointer to the newly created array
  */
 
 int *array_range(int min, int max)
