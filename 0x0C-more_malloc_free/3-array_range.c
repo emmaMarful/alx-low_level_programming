@@ -7,18 +7,19 @@
  * @max: end of the array
  * Return: null if min is greater than max and Null if arr fails.
  */
+
 int *array_range(int min, int max)
 {
-	int *arr, i, arrsize;
+	int *arr, i, size;
 
 	if (min > max)
 		return (NULL);
 
-	arrsize = max - min + 1;
+	size = max - min + 1;
 
-	array = malloc(arrsize * sizeof(int));
+	arr = malloc(sizeof(int) * size);
 
-	if (array == NULL)
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
