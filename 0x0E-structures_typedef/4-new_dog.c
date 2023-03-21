@@ -12,12 +12,12 @@ dog_t *new_dog(char *name, float age, char *owner);
  */
 int _strlen(char *str)
 {
-	int s_len = 0;
+	int stLen = 0;
 
 	while (*str++)
-		s_len++;
+		stLen++;
 
-	return (s_len);
+	return (stLen);
 }
 
 /**
