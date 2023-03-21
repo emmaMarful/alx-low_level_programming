@@ -12,9 +12,8 @@ dog_t *new_dog(char *name, float age, char *owner);
  */
 int _strlen(char *str)
 {
-	int stLen;
+	int stLen = 0;
 
-	stLen = 0;
 	while (*str++)
 		stLen++;
 
@@ -75,7 +74,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	dog->name = _strcopy(d->name, name);
 	dog->age = age;
-	dod->owner = _strcopy(d->owner, owner);
+	dog->owner = _strcopy(d->owner, owner);
 
 	return (d);
 }
