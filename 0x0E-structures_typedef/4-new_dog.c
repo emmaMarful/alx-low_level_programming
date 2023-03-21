@@ -12,12 +12,12 @@ dog_t *new_dog(char *name, float age, char *owner);
  */
 int _strlen(char *str)
 {
-	int stLen = 0;
+	int s_len = 0;
 
 	while (*str++)
-		stLen++;
+		s_len++;
 
-	return (stLen);
+	return (s_len);
 }
 
 /**
@@ -38,7 +38,6 @@ char *_strcopy(char *dest, char *src)
 	return (dest);
 }
 
-
 /**
  * new_dog - new_dog is a function that creates a new dog.
  * @name: dog's name
@@ -48,33 +47,33 @@ char *_strcopy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *d;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	dog = malloc(sizeof(dog_t));
-	if (dog == NULL)
+	d = malloc(sizeof(dog_t));
+	if (d == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (dog->name == NULL)
+	d->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (d->name == NULL)
 	{
-		free(dog);
+		free(d);
 		return (NULL);
 	}
 
-	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (dog->owner == NULL)
+	d->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (d->owner == NULL)
 	{
-		free(dog->name);
-		free(dog);
+		free(d->name);
+		free(d);
 		return (NULL);
 	}
 
-	dog->name = _strcopy(d->name, name);
-	dog->age = age;
-	dog->owner = _strcopy(d->owner, owner);
+	d->name = _strcopy(d->name, name);
+	d->age = age;
+	d->owner = _strcopy(d->owner, owner);
 
 	return (d);
 }
