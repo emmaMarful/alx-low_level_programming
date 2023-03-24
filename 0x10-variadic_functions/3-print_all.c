@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 {
 	va_list v;
 	int i = 0;
-	char *s, *separator = "";
+	char *s, *sp = "";
 
 	va_start(v, format);
 	if (format)
@@ -25,22 +25,22 @@ void print_all(const char * const format, ...)
 					s = va_arg(v, char *);
 					if (!s)
 						s = "(nil)";
-					printf("%s%s", separator, s);
+					printf("%s%s", sp, s);
 					break;
 				case 'i':
-					printf("%s%d", separator, va_arg(v, int));
+					printf("%s%d", sp, va_arg(v, int));
 					break;
 				case 'c':
-					printf("%s%c", separator, va_arg(v, int));
+					printf("%s%c", sp, va_arg(v, int));
 					break;
 				case 'f':
-					printf("%s%f", separator, va_arg(v, double));
+					printf("%s%f", sp, va_arg(v, double));
 					break;
 				default:
 					i++;
 					continue;
 			}
-			separator = ", ";
+			sp = ", ";
 			i++;
 		}
 	}
