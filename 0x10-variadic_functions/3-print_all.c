@@ -10,11 +10,11 @@
 
 void print_all(const char * const format, ...)
 {
-	va_list v;
+	va_list va;
 	int i = 0;
-	char *s, *sp = "";
+	char *s, *separator = "";
 
-	va_start(v, format);
+	va_start(va, format);
 	if (format)
 	{
 		while (format[i])
@@ -22,25 +22,25 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 's':
-					s = va_arg(v, char *);
+					s = va_arg(va, char *);
 					if (!s)
 						s = "(nil)";
-					printf("%s%s", sp, s);
+					printf("%s%s", separator, s);
 					break;
 				case 'i':
-					printf("%s%d", sp, va_arg(v, int));
+					printf("%s%d", separator, va_arg(va, int));
 					break;
 				case 'c':
-					printf("%s%c", sp, va_arg(v, int));
+					printf("%s%c", separator, va_arg(va, int));
 					break;
 				case 'f':
-					printf("%s%f", sp, va_arg(v, double));
+					printf("%s%f", separator, va_arg(va, double));
 					break;
 				default:
 					i++;
 					continue;
 			}
-			sp = ", ";
+			separator = ", ";
 			i++;
 		}
 	}
