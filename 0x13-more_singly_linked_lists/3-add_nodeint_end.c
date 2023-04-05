@@ -10,22 +10,23 @@ nclude "lists.h"
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *ele, *l;
+	listint_t *elements, *l;
 
-	ele = malloc(sizeof(listint_t));
-	if (ele == NULL)
+	elements = malloc(sizeof(listint_t));
+
+	if (elements == NULL)
 		return (NULL);
-	ele->n = n;
-	ele->next = NULL;
+	elements->n = n;
+	elements->next = NULL;
 
 	if (*head == NULL)
-		*head = ele;
+		*head = elements;
 	else
 	{
 		l = *head;
 		while (l->next != NULL)
 			l = l->next;
-		l->next = ele;
+		l->next = elements;
 	}
 	return (*head);
 }
